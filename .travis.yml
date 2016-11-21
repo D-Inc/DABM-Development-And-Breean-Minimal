@@ -20,7 +20,8 @@ branches:
 deploy:
   provider: releases
   api_key:
-    secure: b3bUX4flG99C6w0amtN0M5kG9IPgUgFVY6KmqsahxqxD/0uINQd4FCwN0vXZrTvUhu/2GUGNDOWuqzTU9rBHoTlk2tN/J3jbAJXYcM0yA7dHfEnVB+5PQKrrziZgni2f9yKNudhov7W28dqORUqo7evn3nTKfYbbm+8lynl57gQsiwwJyrAtXcn+tCjLXkHV/OMu/vRLSXwds5yKg209pZ7JcXxW7Wp7FbQkRwh0Gfj2xiNTW6EjvVQY7WDv4wDHpXMW7P49MWz4YTDmoNY0ibB3YmxXHdJ3EXnI1DfP1JsUxb/8NAY62Y//MJ09ne1fI8Db4gl1jDU7m+BimkUar/+MwEh8s0PMd+8nn408sOFvQixrG9L2YNvnGkSxc+LkbRN5qJaw8V8fDjHwYIT415vb722V28HhZnHT0rxSwbo4uMuoR1lwZ8go5ifFEtzyF0DT9hXDoTydoTz1cVtjRPZDbZevN8g/M4eaE+HdoW6p0t9Q6k+7vOz9yi7ML4jdzNvNaS+ZAv06y39utZ/2bFR2yotJSQsYHXWAAoulsasc8/IIdw7rXCUapsgp2u5on58dJ/MH5tcSa773WRkFP+ovU6xoadWtX4oXMW6pMzrdGNSzY8aDN17DSqR6Z6uH9eeNaPPVLpddYjyM/uXrsA9uFkuHOdHjgYyXsOq9osg=
+    env:
+      global: token
   file_glob: true
   file:
   - "build/libs/*.jar"
