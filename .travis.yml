@@ -15,13 +15,12 @@ cache:
 script: "./gradlew build test"
 install: "./gradlew setupCIWorkspace"
 branches:
-  only:
-  - master
+  only: master
 deploy:
   provider: releases
   api_key:
-    env:
-      global: token
+        env:
+          global: token
   file_glob: true
   file:
   - "build/libs/*.jar"
