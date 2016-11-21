@@ -23,4 +23,6 @@ deploy:
   - "build/libs/*.jar"
   skip_cleanup: true
   on:
-    branch: master
+    branch: 
+      - master
+      - 1.11
