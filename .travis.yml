@@ -17,9 +17,7 @@ install: "./gradlew setupCIWorkspace"
 
 deploy:
   provider: releases
-  api_key:
-        env:
-          global: token
+  api_key: $token
   file_glob: true
   file:
   - "build/libs/*.jar"
