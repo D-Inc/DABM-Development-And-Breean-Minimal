@@ -14,6 +14,10 @@ cache:
 
 script: "./gradlew build test"
 install: "./gradlew setupCIWorkspace"
+branches:
+  only:
+  - master
+  - 1.11
 
 deploy:
   provider: releases
