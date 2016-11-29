@@ -1,5 +1,7 @@
 package com.ninjawarrior1337.dabm.proxy;
 
+import com.ninjawarrior1337.dabm.ConfigHandler;
+import com.ninjawarrior1337.dabm.events.FastFlyBreak;
 import com.ninjawarrior1337.dabm.events.TerrainEvent;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
@@ -18,6 +20,8 @@ public class CommonProxy
 
     public void Init(FMLInitializationEvent e)
     {
+        MinecraftForge.EVENT_BUS.register(new ConfigHandler());
+        MinecraftForge.EVENT_BUS.register(new FastFlyBreak());
         MinecraftForge.TERRAIN_GEN_BUS.register(new TerrainEvent());
     }
 
