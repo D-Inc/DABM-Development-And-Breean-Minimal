@@ -12,7 +12,7 @@ import java.io.File;
 /**
  * Created by ninjawarrior1337 on 11/20/16.
  */
-@Mod(modid = Reference.modid, version = Reference.VERSION, name = Reference.MODNAME)
+@Mod(modid = Reference.modid, version = Reference.VERSION, name = Reference.MODNAME, guiFactory = "com.ninjawarrior1337.dabm.gui.DABMGuiFactory")
 public class dabmcore
 {
     @SidedProxy(clientSide="com.ninjawarrior1337.dabm.proxy.ClientProxy", serverSide="com.ninjawarrior1337.dabm.proxy.ServerProxy")
