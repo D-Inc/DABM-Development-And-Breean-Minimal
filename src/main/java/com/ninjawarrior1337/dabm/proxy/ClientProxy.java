@@ -1,5 +1,6 @@
 package com.ninjawarrior1337.dabm.proxy;
 
+import com.ninjawarrior1337.dabm.init.items.RegisterItems;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
@@ -19,6 +20,7 @@ public class ClientProxy extends CommonProxy
     public void Init(FMLInitializationEvent e)
     {
         super.Init(e);
+        RegisterItems.registerRenders();
     }
 
     @Override
